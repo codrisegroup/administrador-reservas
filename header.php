@@ -3,7 +3,7 @@
 @session_start();
 
 //Validar si se esta ingresando con sesion correctamente
-if (!$_SESSION){
+if (!isset($_SESSION['adm_cod_rsv_id_usuario'])){
 echo '<script>
 alert("usuario no autenticado")
 self.location = "/adm-reserva/"

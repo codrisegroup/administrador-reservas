@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-12-01 07:51:34
+<?php /* Smarty version 3.1.24, created on 2016-01-28 12:47:04
          compiled from "./estilos/templates/header-transacciones.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:346438968565d97d6697f69_98041027%%*/
+/*%%SmartyHeaderCode:43537565456aa54185b0d95_58292714%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dfe3275a4fd12ba62cfd80c8b8090d52b1ea5047' => 
     array (
       0 => './estilos/templates/header-transacciones.tpl',
-      1 => 1448973990,
+      1 => 1454002917,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '346438968565d97d6697f69_98041027',
+  'nocache_hash' => '43537565456aa54185b0d95_58292714',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_565d97d66b0012_83233068',
+  'unifunc' => 'content_56aa5418621a28_68666394',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_565d97d66b0012_83233068')) {
-function content_565d97d66b0012_83233068 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56aa5418621a28_68666394')) {
+function content_56aa5418621a28_68666394 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '346438968565d97d6697f69_98041027';
+$_smarty_tpl->properties['nocache_hash'] = '43537565456aa54185b0d95_58292714';
 ?>
 <ul class="nav navbar-nav">
 <li class="dropdown">

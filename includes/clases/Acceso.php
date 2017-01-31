@@ -34,13 +34,13 @@ if (!isset($_SESSION)) {
 @session_start();
 }
 
-$_SESSION['id_usuario'] = $fila['id_usuario'];
-$_SESSION['nombres'] = $fila['nombres'];
-$_SESSION['apellidos'] = $fila['apellidos'];
-$_SESSION['starsoft'] = $fila['starsoft'];
+$_SESSION['adm_cod_rsv_id_usuario'] = $fila['id_usuario'];
+$_SESSION['adm_cod_rsv_nombres'] = $fila['nombres'];
+$_SESSION['adm_cod_rsv_apellidos'] = $fila['apellidos'];
+$_SESSION['adm_cod_rsv_starsoft'] = $fila['starsoft'];
 $_SESSION['idempresa'] = $fila['idempresa'];
-$_SESSION['idarea'] = $fila['idarea'];
-$_SESSION['aud_jefe'] = $fila['aud_jefe'];
+$_SESSION['adm_cod_rsv_idarea'] = $fila['idarea'];
+$_SESSION['adm_cod_rsv_audjefe'] = $fila['aud_jefe'];
 
 
 header("Location: /adm-reserva/home");
@@ -52,24 +52,31 @@ header("Location: /adm-reserva/home");
 
 function Salir()
 {
-   @session_start();
-	
-	if ($_SESSION['id_usuario'])
-	{	
-	session_destroy();
-	echo "
-	<script language = javascript>
-	alert('Su sesion ha terminado correctamente')
-	self.location = '/adm-reserva/'
-	</script>";
-	
-	}
-	else
-	{
-	echo '<script language = javascript>
-	alert("No ha iniciado ninguna sesion, por favor registrese")
-	self.location = "/adm-reserva/"
-	</script>';}
+   session_start();
+   if(!isset($_SESSION['adm_cod_rsv_id_usuario']))
+   {
+       echo "No hay ninguna sesion iniciada";
+      header('Location: /adm-reserva');    
+   }
+//esto ocurre cuando la sesion caduca.
+        
+  
+   else
+   { 
+      
+  unset($_SESSION['adm_cod_rsv_id_usuario']);
+  unset($_SESSION['adm_cod_rsv_nombres']);
+  unset($_SESSION['adm_cod_rsv_apellidos']);
+  unset($_SESSION['adm_cod_rsv_starsoft']);
+  unset($_SESSION['adm_cod_rsv_idempresa']);
+  unset($_SESSION['adm_cod_rsv_idarea']);
+  unset($_SESSION['adm_cod_rsv_audjefe']);
+     //session_destroy();
+     
+      header('Location: /adm-reserva');       
+   }
+ 
+ 
 }
 
 

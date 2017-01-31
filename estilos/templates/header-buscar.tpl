@@ -8,3 +8,9 @@ action='/adm-reserva/consulta/codigo'>
 Buscar por  Código o Descripción
 </button>
 </form>
+
+<form action="" class="navbar-form navbar-left" role="">
+	
+<a href="http://192.168.1.7/codrise/inventarios/moduloreserva/consulta/articulos" class="btn btn-info" target="_blank">Lista de Articulos</a>
+
+</form>

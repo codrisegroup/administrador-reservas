@@ -30,18 +30,24 @@ function MostrarAtributo($reserva,$atributo)
 
 
 
-function ActualizarCantidad($reserva,$idreserva,$cantidad,$clase)
+function ActualizarCantidad($reserva,$idreserva,$cantidad,$clase,$requerimiento,$codigo)
 {
  $link=Conectarse();
  $SQL="UPDATE  [022BDCOMUN].DBO.RESERVA_DET SET CANTIDAD='$cantidad',
  CANT_PEND='$cantidad' WHERE  IDRESERVA_DET='$idreserva'";
  $RESULT=mssql_query($SQL);
+
+ $SQLRM="UPDATE [010BDCOMUN].DBO.INV_REQMATERIAL_DET  
+ SET  /*REQ_CANTIDAD_AUTORIZADA='0',*/
+REQ_CANTIDAD_REQUERIDA='$cantidad' WHERE REQ_NUMERO='$requerimiento' AND ACODIGO='$codigo'";
+
  if (!$RESULT)
   {
     echo "error";
   }
   else
-  {
+  {  
+     $RESULTRM=mssql_query($SQLRM);
   	 if ($clase='1') 
   	 {
   	   header('Location: /adm-reserva/pages/editar-reserva?id='.$reserva);

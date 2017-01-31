@@ -2,7 +2,7 @@
 <li>
 <a href="#">
 <i class="glyphicon glyphicon-user text-success"></i>
-{$smarty.session.nombres} {$smarty.session.apellidos}</a>
+{$smarty.session.adm_cod_rsv_nombres} {$smarty.session.adm_cod_rsv_apellidos}</a>
 </li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong class="caret"></strong></a>

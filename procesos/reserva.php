@@ -6,7 +6,7 @@ $reserva = new Reserva();
 
 if ($_REQUEST['tipo']=='actualizar') 
 {
-$reserva ->ActualizarCantidad($_POST['reserva'],$_POST['idreserva'],$_POST['cantidad'],	$_POST['clase']);
+$reserva ->ActualizarCantidad($_POST['reserva'],$_POST['idreserva'],$_POST['cantidad'],$_POST['clase'],$_POST['requerimiento'],$_POST['codigo']);
 }
 
 else if ($_REQUEST['tipo']=='eliminaritem') 

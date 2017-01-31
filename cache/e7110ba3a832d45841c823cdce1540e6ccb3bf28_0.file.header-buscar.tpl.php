@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-12-01 08:12:51
+<?php /* Smarty version 3.1.24, created on 2016-02-03 14:35:16
          compiled from "../estilos/templates/header-buscar.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:1068319071565d9cd3d07180_25786160%%*/
+/*%%SmartyHeaderCode:60716610756b256745714b7_77851857%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e7110ba3a832d45841c823cdce1540e6ccb3bf28' => 
     array (
       0 => '../estilos/templates/header-buscar.tpl',
-      1 => 1448973989,
+      1 => 1453999595,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1068319071565d9cd3d07180_25786160',
+  'nocache_hash' => '60716610756b256745714b7_77851857',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_565d9cd3d08d73_98619094',
+  'unifunc' => 'content_56b25674573c03_95444373',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_565d9cd3d08d73_98619094')) {
-function content_565d9cd3d08d73_98619094 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56b25674573c03_95444373')) {
+function content_56b25674573c03_95444373 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1068319071565d9cd3d07180_25786160';
+$_smarty_tpl->properties['nocache_hash'] = '60716610756b256745714b7_77851857';
 ?>
 
 <form class="navbar-form navbar-left" role="search" method="POST"
@@ -33,6 +33,12 @@ action='/adm-reserva/consulta/codigo'>
 <button type="submit" class="btn btn-primary">
 Buscar por  Código o Descripción
 </button>
+</form>
+
+<form action="" class="navbar-form navbar-left" role="">
+	
+<a href="http://192.168.1.7/codrise/inventarios/moduloreserva/consulta/articulos" class="btn btn-info" target="_blank">Lista de Articulos</a>
+
 </form>
 <?php }
 }

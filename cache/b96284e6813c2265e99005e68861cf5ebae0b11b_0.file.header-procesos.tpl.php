@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-12-01 08:03:36
+<?php /* Smarty version 3.1.24, created on 2016-01-28 15:10:39
          compiled from "../estilos/templates/header-procesos.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:320091757565d9aa80db378_00002525%%*/
+/*%%SmartyHeaderCode:146137556556aa75bf8cffc4_79124743%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,20 +9,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b96284e6813c2265e99005e68861cf5ebae0b11b' => 
     array (
       0 => '../estilos/templates/header-procesos.tpl',
-      1 => 1448973990,
+      1 => 1454002917,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '320091757565d9aa80db378_00002525',
+  'nocache_hash' => '146137556556aa75bf8cffc4_79124743',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_565d9aa80dd7c4_30926805',
+  'unifunc' => 'content_56aa75bf8d6cb5_93519423',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_565d9aa80dd7c4_30926805')) {
-function content_565d9aa80dd7c4_30926805 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56aa75bf8d6cb5_93519423')) {
+function content_56aa75bf8d6cb5_93519423 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '320091757565d9aa80db378_00002525';
+$_smarty_tpl->properties['nocache_hash'] = '146137556556aa75bf8cffc4_79124743';
 ?>
 <ul class="nav navbar-nav">
 <li class="dropdown">

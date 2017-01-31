@@ -65,7 +65,7 @@ $db = mssql_select_db("[022BDCOMUN]", $cn) or die("ERROR AL CONECTAR A LA BD");
 for ($i = 1; $i <=300; $i++) {
 $_DATOS_EXCEL[$i]['CODIGO'] = $objPHPExcel->getActiveSheet()->getCell('A' . $i)->getCalculatedValue();
 $_DATOS_EXCEL[$i]['CANTIDAD'] = $objPHPExcel->getActiveSheet()->getCell('C' . $i)->getCalculatedValue();
-$_DATOS_EXCEL[$i]['USUARIO']= $_SESSION['id_usuario']; 
+$_DATOS_EXCEL[$i]['USUARIO']= $_SESSION['adm_cod_rsv_id_usuario']; 
 $_DATOS_EXCEL[$i]['TIPO']= "OT-CC"; 
 }
 }
@@ -77,7 +77,7 @@ $errores = 0;
 //recorremos el arreglo multidimensional 
 //para ir recuperando los datos obtenidos
 //del excel e ir insertandolos en la BD
-$usuariosesion=$_SESSION['id_usuario'];
+$usuariosesion=$_SESSION['adm_cod_rsv_id_usuario'];
 
 foreach ($_DATOS_EXCEL as $campo => $valor) {
 

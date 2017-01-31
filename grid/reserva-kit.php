@@ -23,7 +23,7 @@ ISNULL(S.STSKDIS,0)-SUM(ISNULL(D.CANT_PEND,0)) AS CANT_DISP,
 [010BDCOMUN].DBO.STKART AS S ON 
 K.CODART=S.STCODIGO AND S.STALMA='01' LEFT JOIN 
 [022BDCOMUN].DBO.adm-reserva_DET AS D ON 
-K.CODART=D.CODIGO   WHERE K.USUARIO=$_SESSION[id_usuario] AND  TIPO='$_GET[tipo]'
+K.CODART=D.CODIGO   WHERE K.USUARIO=$_SESSION[adm_cod_rsv_id_usuario] AND  TIPO='$_GET[tipo]'
 GROUP BY  K.IDKIT,K.CODART,K.CODKIT,K.CANTIDAD,K.DESCRIPCION,K.UNIDAD,K.TIPO,S.STSKDIS";  
 $result= mssql_query($sql) or die(mssql_error());
 if(mssql_num_rows($result)==0) die("No hay registros para mostrar");

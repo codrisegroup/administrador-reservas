@@ -26,9 +26,9 @@ FROM [022BDCOMUN].DBO.RESERVA_DET  AS D  INNER JOIN
 <th>SALDO</th>
 <th>REQUERIMIENTO</th>
 <th>N. INGRESO</th>
-<th style="text-align: center"><i class="fa fa-pencil-square-o fa-2x text-primary"></i></th>
-<th style="text-align: center"><i class="fa fa-truck fa-2x text-success"></i></th>
-<th style="text-align: center"><i class="fa fa-trash fa-2x text-danger"></i></th>
+	<th style="text-align: center"><i class="fa fa-pencil-square-o fa-2x text-primary"></i></th>
+	<th style="text-align: center"><i class="fa fa-truck fa-2x text-success"></i></th>
+	<th style="text-align: center"><i class="fa fa-trash fa-2x text-danger"></i></th>
 
 </tr>
 </thead>
@@ -118,6 +118,9 @@ value="<?php echo $reg[CODIGO]; ?>">
 value="<?php echo round($reg[CANTIDAD],2); ?>" 
  step="any"  min="1"  >
 </div>
+
+<input type="hidden" name="requerimiento" value="<?php echo $reg[REQUERIMIENTO]; ?>">
+<input type="hidden" name="codigo" value="<?php echo $reg[CODIGO]; ?>">
 
 </div>
 <div class="modal-footer">
